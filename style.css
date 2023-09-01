@@ -5,14 +5,29 @@
 }
 
 body {
-    background: green;
-    font-family:
+    background: #8DAB7F;
+    font-family: 'Oswald', Courier, monospace;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: coral;
+}
+
+a:hover {
+    color: blue;
 }
 
 #container {
     margin: 50px auto;
+    /* 
+    This says that the pixel is 300px wide and then auto the border on each side
+    */
     width: 300px;
+    margin-bottom: 10px;
 }
+
 
 .form-wrap {
     background: white;
@@ -39,6 +54,19 @@ body {
     border: 1px solid #a7a7a7;
 }
 
+button:hover {
+    color: aqua;
+}
+
+label {
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+
+/* 
+button inherts position from form wrap - does not form part of form label
+*/
 .form-wrap button {
     width: 80%;
     background: coral;
@@ -49,4 +77,34 @@ body {
     font-size: 12px;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+.form-wrap .bottom-text {
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+footer {
+    margin: 10px auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer a:hover {
+    color: rgb(47, 16, 218);
+}
+
+/* Sudo class hover*/
+
+.form-wrap .bottom-text a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+a:hover {
+    color: blue;
+}
+
+button:hover {
+    color: blue;
 }
